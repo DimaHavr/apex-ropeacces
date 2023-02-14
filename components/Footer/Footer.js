@@ -1,5 +1,7 @@
+import { SectionFooter } from "./Footer.styled";
+
 const Footer = () => {
-  return <div>footer</div>;
+  return <SectionFooter>cfvgbhnjmkl;</SectionFooter>;
 };
 
 export default Footer;

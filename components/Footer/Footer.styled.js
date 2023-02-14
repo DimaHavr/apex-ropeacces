@@ -14,3 +14,12 @@ export const TelegramIcon = styled(BsTelegram)`
   width: 25px;
   height: 25px;
 `;
+
+export const SectionFooter = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 50px 15px;
+  background-color: #2b2b2b;
+`;
