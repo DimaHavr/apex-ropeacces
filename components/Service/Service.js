@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Box from '../Box/Box';
 import Modal from '../Modal/Modal';
+import Image from 'next/image';
 
 import {
   SectionService,
