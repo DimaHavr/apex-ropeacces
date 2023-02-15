@@ -9,7 +9,7 @@ export const SectionHero = styled.div`
   flex-direction: column;
   gap: 20px;
   background-image: linear-gradient(#0000003e, rgba(0, 0, 0, 0.5)),
-    url('/images/hero/heroBg.webp');
+    url('public/images/hero/heroBg.webp');
 
   background-repeat: no-repeat;
   background-position: center;
