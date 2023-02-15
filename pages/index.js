@@ -1,9 +1,10 @@
-import Layout from "../components/Layout";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Service from "../components/Service/Service";
-import About from "../components/About/About";
-import Footer from "../components/Footer/Footer";
+import Layout from '../components/Layout';
+import Header from '../components/Header/Header';
+import Hero from '../components/Hero/Hero';
+import Service from '../components/Hero/Service';
+import About from '../components/About/About';
+import Footer from '../components/Footer/Footer';
+import Gallery from '../components/Gallery/Gallery';
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Hero />
       <About />
       <Service />
+      <Gallery />
       <Footer />
     </Layout>
   );

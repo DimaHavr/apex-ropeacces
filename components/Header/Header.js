@@ -1,3 +1,6 @@
+import { useState } from 'react';
+
+import Modal from '../Modal/Modal';
 import {
   HeaderWrapper,
   Nav,
@@ -9,8 +12,17 @@ import {
   NavButton,
   ContactIcon,
   NavLogoIcon,
-} from "./Header.styled";
+} from './Header.styled';
 const Header = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   return (
     <HeaderWrapper>
       <Nav>
@@ -30,7 +42,8 @@ const Header = () => {
           </NavItem>
         </NavList>
       </Nav>
-      <NavButton>Контакт</NavButton>
+      <NavButton onClick={handleOpenModal}>Контакт</NavButton>
+      {showModal && <Modal onClose={handleCloseModal} />}
       <ContactIcon />
     </HeaderWrapper>
   );
