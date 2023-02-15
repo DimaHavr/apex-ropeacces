@@ -24,7 +24,7 @@ const Header = () => {
     setShowModal(false);
   };
   return (
-    <HeaderWrapper>
+    <HeaderWrapper id="header">
       <Nav>
         <NavLogo>
           <NavLogoIcon />
@@ -32,19 +32,19 @@ const Header = () => {
         </NavLogo>
         <NavList>
           <NavItem>
-            <NavLink href="#">Про нас</NavLink>
+            <NavLink href="#about">Про нас</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Послуги</NavLink>
+            <NavLink href="#service">Послуги</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Галерея</NavLink>
+            <NavLink href="#gallery">Галерея</NavLink>
           </NavItem>
         </NavList>
       </Nav>
       <NavButton onClick={handleOpenModal}>Контакт</NavButton>
       {showModal && <Modal onClose={handleCloseModal} />}
-      <ContactIcon />
+      <ContactIcon onClick={handleOpenModal} />
     </HeaderWrapper>
   );
 };

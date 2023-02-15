@@ -11,6 +11,9 @@ import {
   CommentIcon,
   UserIcon,
   CloseButton,
+  ContactsLink,
+  ContactsBox,
+  ContactsText,
 } from './SubmitForm.styled';
 
 const SubmitForm = ({ onClose }) => {
@@ -70,6 +73,12 @@ const SubmitForm = ({ onClose }) => {
         <FormButton type="submit">Надіслати</FormButton>
       </form>
       <CloseButton onClick={onClose} />
+      <ContactsBox>
+        <ContactsText>Зателефонувати:</ContactsText>
+        <ContactsLink onClick={() => onClose()} href="tel:+380961111111">
+          +38 097 77 77 77
+        </ContactsLink>
+      </ContactsBox>
     </FormContainer>
   );
 };

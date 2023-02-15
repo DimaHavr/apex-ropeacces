@@ -15,7 +15,7 @@ export const UserIcon = styled(FaUserAlt)`
   background: transparent;
   border: none;
   z-index: 100;
-  fill: darkslategrey;
+  fill: #c4d600;
 `;
 
 export const CommentIcon = styled(BiCommentDots)`
@@ -28,7 +28,7 @@ export const CommentIcon = styled(BiCommentDots)`
   background: transparent;
   border: none;
   z-index: 100;
-  fill: darkslategrey;
+  fill: #c4d600;
 `;
 export const ContactIcon = styled(BsFillTelephoneFill)`
   width: 23px;
@@ -40,7 +40,7 @@ export const ContactIcon = styled(BsFillTelephoneFill)`
   background: transparent;
   border: none;
   z-index: 100;
-  fill: darkslategrey;
+  fill: #c4d600;
 `;
 export const EmailIcon = styled(MdOutlineMailOutline)`
   width: 27px;
@@ -52,7 +52,7 @@ export const EmailIcon = styled(MdOutlineMailOutline)`
   background: transparent;
   border: none;
   z-index: 100;
-  fill: darkslategrey;
+  fill: #c4d600;
 `;
 
 export const FormContainer = styled.div`
@@ -157,5 +157,51 @@ export const CloseButton = styled(AiOutlineCloseCircle)`
   }
   :active {
     animation: btn-animation 1s ease-out;
+  }
+`;
+
+export const ContactsBox = styled.div`
+  padding-top: 15px;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+`;
+
+export const ContactsLink = styled.a`
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 -6px 18px rgba(0, 0, 0, 0.35);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    text-decoration: none;
+    color: #c4d600;
+  }
+
+  @media (max-width: 480px) {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.88;
+  }
+`;
+
+export const ContactsText = styled.p`
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0 -6px 18px rgba(0, 0, 0, 0.35);
+
+  @media (max-width: 480px) {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.88;
   }
 `;

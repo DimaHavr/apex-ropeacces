@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SectionHero = styled.div`
   max-width: 100%;
@@ -9,7 +9,7 @@ export const SectionHero = styled.div`
   flex-direction: column;
   gap: 20px;
   background-image: linear-gradient(#0000003e, rgba(0, 0, 0, 0.5)),
-    url("https://www.equinoxaccess.com/site/assets/files/1107/20160109_145422.jpg");
+    url('/images/hero/heroBg.webp');
 
   background-repeat: no-repeat;
   background-position: center;
@@ -83,7 +83,7 @@ export const Button = styled.button`
   letter-spacing: 0.06em;
   color: #000;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #c4d600;
   border: 0px;
   border-radius: 4px;
   padding: 10px 30px;
@@ -95,10 +95,9 @@ export const Button = styled.button`
 
   &:hover,
   &:focus {
-    background-color: #c4d600;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     box-shadow: 0 18px 28px 2px rgba(0, 0, 0, 0.43);
-
     transform: scale(1.03);
   }
 

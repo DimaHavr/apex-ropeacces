@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Box from '../Box/Box';
+import Modal from '../Modal/Modal';
+
 import {
   SectionService,
   SectionTitle,
@@ -16,31 +18,42 @@ import {
   ModalButton,
 } from './Service.styled';
 
+const serviceArray = [
+  {
+    title: 'Професійна мийка вікон',
+    description:
+      'qwertyuio  wqertyui edrtyui dfghj asdfghj sdfgh asdfgh sdfgh dfgh dsfgv Ми приділяємо велбезпеки. Усі працівники навчені процедурам безпеки та використанню вони дотримуються суворих протоколів',
+    img: '/images/hero/heroBg.webp',
+    alt: 'xxx',
+    isOpen: false,
+  },
+  {
+    title: 'Монтаж/демонтаж конструкцій',
+    description: 'hhh',
+    img: '/images/hero/heroBg.webp',
+    alt: 'xxx',
+    isOpen: false,
+  },
+  {
+    title: 'Element 3',
+    description: 'hhh',
+    img: '/images/hero/heroBg.webp',
+    alt: 'xxx',
+    isOpen: false,
+  },
+];
+
 const Service = () => {
-  const [collapseState, setCollapseState] = useState([
-    {
-      title: 'Професійна мийка вікон',
-      description:
-        'qwertyuio  wqertyui edrtyui dfghj asdfghj sdfgh asdfgh sdfgh dfgh dsfgv Ми приділяємо велбезпеки. Усі працівники навчені процедурам безпеки та використанню вони дотримуються суворих протоколів',
-      img: 'https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg',
-      alt: 'xxx',
-      isOpen: false,
-    },
-    {
-      title: 'Монтаж/демонтаж конструкцій',
-      description: 'hhh',
-      img: 'https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg',
-      alt: 'xxx',
-      isOpen: false,
-    },
-    {
-      title: 'Element 3',
-      description: 'hhh',
-      img: 'https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg',
-      alt: 'xxx',
-      isOpen: false,
-    },
-  ]);
+  const [collapseState, setCollapseState] = useState(serviceArray);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   const toggleCollapse = index => {
     const newCollapseState = [...collapseState];
@@ -49,7 +62,7 @@ const Service = () => {
   };
 
   return (
-    <SectionService>
+    <SectionService id="service">
       <SectionTitle>Послуги</SectionTitle>
       {collapseState.map(({ title, description, img, alt, isOpen }, index) => (
         <CollapseWrapper key={index}>
@@ -74,12 +87,15 @@ const Service = () => {
                   <Description>{description}</Description>
                   <StyledImg src={img} alt={alt} />
                 </DescriptionBoxItem>
-                <ModalButton>Замовити послугу</ModalButton>
+                <ModalButton onClick={handleOpenModal}>
+                  Замовити послугу
+                </ModalButton>
               </Box>
             </CollapseContent>
           </CollapseContainer>
         </CollapseWrapper>
       ))}
+      {showModal && <Modal onClose={handleCloseModal} />}
     </SectionService>
   );
 };

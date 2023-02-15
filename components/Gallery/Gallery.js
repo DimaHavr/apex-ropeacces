@@ -13,24 +13,24 @@ import {
 const imagesArray = [
   {
     id: 1,
-    img: 'https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg',
+    img: '/images/gallery/heroBg.webp',
     alt: 'xxx',
   },
   {
     id: 2,
-    img: 'https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg',
+    img: '/images/gallery/heroBg.webp',
     alt: 'xxx',
   },
   {
     id: 3,
-    img: 'https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg',
+    img: '/images/gallery/heroBg.webp',
     alt: 'xxx',
   },
 ];
 
 const Gallery = () => {
   return (
-    <SectionGallery>
+    <SectionGallery id="gallery">
       <SectionTitle>Галерея</SectionTitle>
       <GalleryContainer>
         <Swiper

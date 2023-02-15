@@ -5,11 +5,11 @@ import {
   DescriptionBox,
   StyledImg,
   DescriptionBoxItem,
-} from "./About.styled";
+} from './About.styled';
 
 const About = () => {
   return (
-    <SectionAbout>
+    <SectionAbout id="about">
       <TextName>Apex</TextName>
       <DescriptionBox>
         <DescriptionBoxItem>
@@ -20,16 +20,10 @@ const About = () => {
             включаючи встановлення, технічне обслуговування, перевірку та ремонт
             різного обладнання та інфраструктури на висоті.
           </Description>
-          <StyledImg
-            src="https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg"
-            alt="My Image"
-          />
+          <StyledImg src="/images/about/heroBg.webp" alt="My Image" />
         </DescriptionBoxItem>
         <DescriptionBoxItem>
-          <StyledImg
-            src="https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg"
-            alt="My Image"
-          />
+          <StyledImg src="/images/about/heroBg.webp" alt="My Image" />
           <Description>
             Ми приділяємо велику увагу безпеці та маємо комплексну програму
             безпеки. Усі працівники навчені процедурам безпеки та використанню
@@ -46,10 +40,7 @@ const About = () => {
             промислових об’єктів. Компанія розташована у місті Івано-Франківськ
             та надає послуги по всій області...
           </Description>
-          <StyledImg
-            src="https://valiantsolutions.ca/wp-content/uploads/2020/11/Rope-Access-Valiant-Solutions-4-1200x650.jpg"
-            alt="My Image"
-          />
+          <StyledImg src="/images/about/heroBg.webp" alt="My Image" />
         </DescriptionBoxItem>
       </DescriptionBox>
     </SectionAbout>
