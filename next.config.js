@@ -8,3 +8,8 @@ module.exports = {
     formats: ['image/webp'],
   },
 };
+module.exports = {
+  images: {
+    unoptimized: true,
+  },
+};
