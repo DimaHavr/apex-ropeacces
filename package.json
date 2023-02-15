@@ -2,6 +2,7 @@
   "name": "apex-ropeaccess",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://DimaHavr.github.io/apex-ropeaccess/",
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
