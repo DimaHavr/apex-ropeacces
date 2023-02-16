@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import Image from 'next/image';
 
 export const SectionAbout = styled.div`
   display: flex;
@@ -77,9 +78,9 @@ export const DescriptionBoxItem = styled.div`
   }
 `;
 
-export const StyledImg = styled.img`
-  max-width: 500px;
-  height: auto;
+export const StyledImg = styled(Image)`
+  width: 500px;
+  height: 300;
   overflow: hidden;
   object-fit: cover;
   box-shadow: 1.5px 1px 27.5px 2px rgba(0, 0, 0, 0.4);
