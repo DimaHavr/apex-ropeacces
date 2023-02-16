@@ -78,7 +78,7 @@ export const DescriptionBoxItem = styled.div`
   }
 `;
 
-export const StyledImg = styled(Image)`
+export const StyledImg = styled.img`
   width: 500px;
   height: 300;
   overflow: hidden;
