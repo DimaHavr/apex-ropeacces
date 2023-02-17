@@ -22,21 +22,21 @@ import {
 const serviceArray = [
   {
     title: 'Професійна мийка вікон',
-    description: 'text',
+    description: 'text content',
     img: '/images/hero/heroBg.webp',
     alt: 'ropeaccess work',
     isOpen: false,
   },
   {
     title: 'Монтаж/демонтаж конструкцій',
-    description: 'text',
+    description: 'text content',
     img: '/images/hero/heroBg.webp',
     alt: 'ropeaccess work',
     isOpen: false,
   },
   {
     title: 'Element 3',
-    description: 'text',
+    description: 'text content',
     img: '/images/hero/heroBg.webp',
     alt: 'ropeaccess work',
     isOpen: false,
