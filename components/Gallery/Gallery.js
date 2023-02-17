@@ -14,17 +14,17 @@ const imagesArray = [
   {
     id: 1,
     img: '/images/gallery/heroBg.webp',
-    alt: 'xxx',
+    alt: 'ropeaccess work',
   },
   {
     id: 2,
     img: '/images/gallery/heroBg.webp',
-    alt: 'xxx',
+    alt: 'ropeaccess work',
   },
   {
     id: 3,
     img: '/images/gallery/heroBg.webp',
-    alt: 'xxx',
+    alt: 'ropeaccess work',
   },
 ];
 

@@ -22,24 +22,23 @@ import {
 const serviceArray = [
   {
     title: 'Професійна мийка вікон',
-    description:
-      'qwertyuio  wqertyui edrtyui dfghj asdfghj sdfgh asdfgh sdfgh dfgh dsfgv Ми приділяємо велбезпеки. Усі працівники навчені процедурам безпеки та використанню вони дотримуються суворих протоколів',
+    description: 'text',
     img: '/images/hero/heroBg.webp',
-    alt: 'xxx',
+    alt: 'ropeaccess work',
     isOpen: false,
   },
   {
     title: 'Монтаж/демонтаж конструкцій',
-    description: 'hhh',
+    description: 'text',
     img: '/images/hero/heroBg.webp',
-    alt: 'xxx',
+    alt: 'ropeaccess work',
     isOpen: false,
   },
   {
     title: 'Element 3',
-    description: 'hhh',
+    description: 'text',
     img: '/images/hero/heroBg.webp',
-    alt: 'xxx',
+    alt: 'ropeaccess work',
     isOpen: false,
   },
 ];
